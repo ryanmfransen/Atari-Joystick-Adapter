@@ -1,0 +1,7798 @@
+(kicad_sch
+	(version 20231120)
+	(generator "eeschema")
+	(generator_version "8.0")
+	(uuid "e9724942-4b18-4de1-8b5e-28939277b4a7")
+	(paper "A4")
+	(title_block
+		(title "Atari Joystick Adapter")
+		(date "February 14, 2024")
+		(rev "1.1")
+		(company "12 Oranges Software")
+		(comment 1 "Bluetooth adapter for single button Atari CX40 Joystick.")
+	)
+	(lib_symbols
+		(symbol "Atari Joystick Adapter Symbol Library:6W_Mini_Boost_Converter"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at 0 3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" ""
+				(at 0 3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "6W_Mini_Boost_Converter_0_1"
+				(rectangle
+					(start -6.35 2.54)
+					(end 7.62 -3.81)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "6W_Mini_Boost_Converter_1_1"
+				(text "6W DC-DC Boost Converter"
+					(at 1.27 -6.35 0)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(pin input line
+					(at -8.89 1.27 0)
+					(length 2.54)
+					(name "VIN+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -8.89 -2.54 0)
+					(length 2.54)
+					(name "VIN-"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 10.16 1.27 180)
+					(length 2.54)
+					(name "VOUT+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 10.16 -2.54 180)
+					(length 2.54)
+					(name "VOUT-"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Atari Joystick Adapter Symbol Library:Battery_Cell"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "BT"
+				(at 2.54 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "Battery_Cell"
+				(at 2.54 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 1.524 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 1.524 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Single-cell battery"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "battery cell"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Battery_Cell_0_1"
+				(rectangle
+					(start -2.286 1.778)
+					(end 2.286 1.524)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start -1.524 1.016)
+					(end 1.524 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0.762) (xy 0 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 1.778) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 3.048) (xy 1.778 3.048)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 3.556) (xy 1.27 2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Battery_Cell_1_1"
+				(pin passive line
+					(at 0 5.08 270)
+					(length 2.54)
+					(name "+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 90)
+					(length 2.54)
+					(name "-"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Atari Joystick Adapter Symbol Library:C"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "C"
+				(at 0.635 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "C"
+				(at 0.635 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0.9652 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Unpolarized capacitor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "cap capacitor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "C_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "C_0_1"
+				(polyline
+					(pts
+						(xy -2.032 -0.762) (xy 2.032 -0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.032 0.762) (xy 2.032 0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "C_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 2.794)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 2.794)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Atari Joystick Adapter Symbol Library:Conn_01x02_Pin"
+			(pin_names
+				(offset 1.016) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Conn_01x02_Pin"
+				(at 0 -5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Generic connector, single row, 01x02, script generated"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_locked" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "connector"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Connector*:*_1x??_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Conn_01x02_Pin_1_1"
+				(polyline
+					(pts
+						(xy 1.27 -2.54) (xy 0.8636 -2.54)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 0) (xy 0.8636 0)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 0.8636 -2.413)
+					(end 0 -2.667)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start 0.8636 0.127)
+					(end 0 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 3.81)
+					(name "Pin_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 -2.54 180)
+					(length 3.81)
+					(name "Pin_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Atari Joystick Adapter Symbol Library:Conn_01x09_Pin"
+			(pin_names
+				(offset 1.016) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at 0 12.7 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Conn_01x09_Pin"
+				(at 0 -12.7 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Generic connector, single row, 01x09, script generated"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_locked" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "connector"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Connector*:*_1x??_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Conn_01x09_Pin_1_1"
+				(polyline
+					(pts
+						(xy 1.27 -10.16) (xy 0.8636 -10.16)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -7.62) (xy 0.8636 -7.62)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -5.08) (xy 0.8636 -5.08)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -2.54) (xy 0.8636 -2.54)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 0) (xy 0.8636 0)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 2.54) (xy 0.8636 2.54)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 5.08) (xy 0.8636 5.08)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 7.62) (xy 0.8636 7.62)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 10.16) (xy 0.8636 10.16)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 0.8636 -10.033)
+					(end 0 -10.287)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start 0.8636 -7.493)
+					(end 0 -7.747)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start 0.8636 -4.953)
+					(end 0 -5.207)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start 0.8636 -2.413)
+					(end 0 -2.667)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start 0.8636 0.127)
+					(end 0 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start 0.8636 2.667)
+					(end 0 2.413)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start 0.8636 5.207)
+					(end 0 4.953)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start 0.8636 7.747)
+					(end 0 7.493)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start 0.8636 10.287)
+					(end 0 10.033)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(pin passive line
+					(at 5.08 10.16 180)
+					(length 3.81)
+					(name "Pin_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 7.62 180)
+					(length 3.81)
+					(name "Pin_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 5.08 180)
+					(length 3.81)
+					(name "Pin_3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 2.54 180)
+					(length 3.81)
+					(name "Pin_4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 3.81)
+					(name "Pin_5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 -2.54 180)
+					(length 3.81)
+					(name "Pin_6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 -5.08 180)
+					(length 3.81)
+					(name "Pin_7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 -7.62 180)
+					(length 3.81)
+					(name "Pin_8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 -10.16 180)
+					(length 3.81)
+					(name "Pin_9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Atari Joystick Adapter Symbol Library:GND"
+			(power)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "GND"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "GND_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "GND_1_1"
+				(pin power_in line
+					(at 0 0 270)
+					(length 0) hide
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Atari Joystick Adapter Symbol Library:Jumper_2_Bridged"
+			(pin_names
+				(offset 0) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "JP"
+				(at 0 1.905 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Jumper_2_Bridged"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Jumper, 2-pole, closed/bridged"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "Jumper SPST"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Jumper* TestPoint*2Pads* TestPoint*Bridge*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Jumper_2_Bridged_0_0"
+				(circle
+					(center -2.032 0)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.032 0)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Jumper_2_Bridged_0_1"
+				(arc
+					(start 1.524 0.254)
+					(mid 0 0.762)
+					(end -1.524 0.254)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Jumper_2_Bridged_1_1"
+				(pin passive line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 2.54)
+					(name "B"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Atari Joystick Adapter Symbol Library:R"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "R"
+				(at 2.032 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "R"
+				(at 0 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at -1.778 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "R res resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "R_0_1"
+				(rectangle
+					(start -1.016 -2.54)
+					(end 1.016 2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Atari Joystick Adapter Symbol Library:SW_Push"
+			(pin_numbers hide)
+			(pin_names
+				(offset 1.016) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "SW"
+				(at 1.27 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "SW_Push"
+				(at 0 -1.524 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Push button switch, generic, two pins"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "switch normally-open pushbutton push-button"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "SW_Push_0_1"
+				(circle
+					(center -2.032 0)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 1.27) (xy 0 3.048)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 1.27) (xy -2.54 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.032 0)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 2.54)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Atari Joystick Adapter Symbol Library:TP4056_TC4056_Lithium_Battery_Charger_Module_Board"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at 0 6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" ""
+				(at 2.54 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 2.54 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 2.54 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "TP4056_TC4056_Lithium_Battery_Charger_Module_Board_0_1"
+				(rectangle
+					(start -5.08 1.27)
+					(end 6.35 -10.16)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "TP4056_TC4056_Lithium_Battery_Charger_Module_Board_1_1"
+				(text "LiPo Battery Charger"
+					(at 0 3.81 0)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 8.89 0 180)
+					(length 2.54)
+					(name "B+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 8.89 -3.81 180)
+					(length 2.54)
+					(name "B-"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at -7.62 0 0)
+					(length 2.54)
+					(name "VOUT+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at -7.62 -3.81 0)
+					(length 2.54)
+					(name "VOUT-"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -2.54 -12.7 90)
+					(length 2.54)
+					(name "VIN+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 3.81 -12.7 90)
+					(length 2.54)
+					(name "VIN-"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Atari Joystick Adapter Symbol Library:VCC"
+			(power)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "VCC"
+				(at 0 3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"VCC\""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "VCC_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "VCC_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0) hide
+					(name "VCC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Atari Joystick Adapter Symbol Library:mini_esp32"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at -7.62 -50.8 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "mini_esp32"
+				(at 5.08 -59.69 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 3.81 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 3.81 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "mini_esp32_0_0"
+				(text "ESP32"
+					(at 7.62 -62.23 0)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(pin power_in line
+					(at 13.97 -12.7 180)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 13.97 -15.24 180)
+					(length 2.54)
+					(name "RST"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin no_connect non_logic
+					(at 13.97 -21.59 180)
+					(length 2.54)
+					(name "NC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -12.7 -45.72 0)
+					(length 2.54)
+					(name "IO_36/SVP/A0"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -12.7 -48.26 0)
+					(length 2.54)
+					(name "IO_39/SVN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "mini_esp32_0_1"
+				(rectangle
+					(start -10.16 -1.27)
+					(end 11.43 -64.77)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "mini_esp32_1_1"
+				(pin bidirectional line
+					(at -12.7 -33.02 0)
+					(length 2.54)
+					(name "IO_19/D6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -12.7 -40.64 0)
+					(length 2.54)
+					(name "IO_34"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "11"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -12.7 -55.88 0)
+					(length 2.54)
+					(name "IO_23/D7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "12"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -12.7 -22.86 0)
+					(length 2.54)
+					(name "IO_14/TMS"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "13"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -12.7 -10.16 0)
+					(length 2.54)
+					(name "IO_05/D8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "14"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin no_connect non_logic
+					(at 13.97 -19.05 180)
+					(length 2.54)
+					(name "NC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "15"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 13.97 -5.08 180)
+					(length 2.54)
+					(name "3V3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "16"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -12.7 -12.7 0)
+					(length 2.54)
+					(name "IO_09/SD2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "17"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -12.7 -20.32 0)
+					(length 2.54)
+					(name "IO_13/TCK"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "18"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive non_logic
+					(at 13.97 -27.94 180)
+					(length 2.54)
+					(name "CMD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "19"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -12.7 -15.24 0)
+					(length 2.54)
+					(name "IO_10/SD3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "20"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive non_logic
+					(at 13.97 -30.48 180)
+					(length 2.54)
+					(name "TXD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "21"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 13.97 -10.16 180)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "22"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive non_logic
+					(at 13.97 -33.02 180)
+					(length 2.54)
+					(name "RXD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "23"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -12.7 -63.5 0)
+					(length 2.54)
+					(name "IO_27"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "24"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -12.7 -53.34 0)
+					(length 2.54)
+					(name "IO_22/D1/SCL"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "25"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -12.7 -58.42 0)
+					(length 2.54)
+					(name "IO_25"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "26"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -12.7 -50.8 0)
+					(length 2.54)
+					(name "IO_21/D2/SDA"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "27"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -12.7 -35.56 0)
+					(length 2.54)
+					(name "IO_32"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "28"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -12.7 -27.94 0)
+					(length 2.54)
+					(name "IO_17/D3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "29"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -12.7 -17.78 0)
+					(length 2.54)
+					(name "IO_12/TDI"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "30"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -12.7 -25.4 0)
+					(length 2.54)
+					(name "IO_16/D4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "31"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -12.7 -7.62 0)
+					(length 2.54)
+					(name "IO_04"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "32"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 13.97 -7.62 180)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "33"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -12.7 -2.54 0)
+					(length 2.54)
+					(name "IO_00"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "34"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 13.97 -2.54 180)
+					(length 2.54)
+					(name "VCC_(USB)"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "35"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -12.7 -5.08 0)
+					(length 2.54)
+					(name "IO_02"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "36"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive non_logic
+					(at 13.97 -43.18 180)
+					(length 2.54)
+					(name "TD0"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "37"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive non_logic
+					(at 13.97 -40.64 180)
+					(length 2.54)
+					(name "SD1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "38"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive non_logic
+					(at 13.97 -38.1 180)
+					(length 2.54)
+					(name "SD0"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "39"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive non_logic
+					(at 13.97 -35.56 180)
+					(length 2.54)
+					(name "CLK"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "40"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -12.7 -60.96 0)
+					(length 2.54)
+					(name "IO_26/D0"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -12.7 -43.18 0)
+					(length 2.54)
+					(name "IO_35"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -12.7 -30.48 0)
+					(length 2.54)
+					(name "IO_18/D5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -12.7 -38.1 0)
+					(length 2.54)
+					(name "IO_33"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+	)
+	(junction
+		(at 107.95 67.31)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0e125d1f-e178-43ef-8dab-35873876514f")
+	)
+	(junction
+		(at 166.37 109.22)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "463462c5-6469-4bee-a737-44ebc1e856cc")
+	)
+	(junction
+		(at 166.37 39.37)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "58b02a72-683e-478a-9b72-9ee935decb86")
+	)
+	(junction
+		(at 191.77 86.36)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "611cb3a3-cb31-4074-8449-f4d76fa6938a")
+	)
+	(junction
+		(at 191.77 39.37)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9bf3c3ac-42e5-4420-a1f9-9d9c72f7f439")
+	)
+	(junction
+		(at 190.5 63.5)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b15e6d4d-a5a9-4eae-ad48-fe0ac293227e")
+	)
+	(junction
+		(at 166.37 86.36)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c5ac05b6-0111-42bf-8e63-2713ed5653a6")
+	)
+	(junction
+		(at 191.77 109.22)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d1a8f8b4-d753-47f8-87f1-fb07246b2bc0")
+	)
+	(junction
+		(at 165.1 63.5)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e1538e09-9e54-4749-88e4-be32db2bc9a4")
+	)
+	(no_connect
+		(at 43.18 78.74)
+		(uuid "08df3178-8c05-459d-8f64-2d96e11e4486")
+	)
+	(no_connect
+		(at 43.18 101.6)
+		(uuid "0da540e3-fbf9-459b-9b5e-ab88b9ef7b43")
+	)
+	(no_connect
+		(at 69.85 83.82)
+		(uuid "0dda7df8-33cd-4347-af87-e78a98b08513")
+	)
+	(no_connect
+		(at 43.18 66.04)
+		(uuid "21aacbad-f15c-40c4-9361-8ff2fda4352e")
+	)
+	(no_connect
+		(at 43.18 60.96)
+		(uuid "2206693a-ffae-4f25-97c1-ff5cb6bfa525")
+	)
+	(no_connect
+		(at 69.85 48.26)
+		(uuid "2d7d8afc-7f21-46a6-a7b5-8af2bda35dc1")
+	)
+	(no_connect
+		(at 43.18 86.36)
+		(uuid "36f7612f-7d3b-4914-b096-61ddd8a7f486")
+	)
+	(no_connect
+		(at 43.18 58.42)
+		(uuid "3edb1a25-c117-4fa5-ac1d-8ab63e7155c0")
+	)
+	(no_connect
+		(at 69.85 71.12)
+		(uuid "43effaed-ae42-4acc-af20-73e084c8ca39")
+	)
+	(no_connect
+		(at 43.18 63.5)
+		(uuid "4e678207-04a8-4097-a414-c810cb13666c")
+	)
+	(no_connect
+		(at 69.85 76.2)
+		(uuid "50ed7c00-c478-4c6c-b7dc-a63dddd22976")
+	)
+	(no_connect
+		(at 43.18 45.72)
+		(uuid "595980f4-1640-45ef-8c62-7bc300ae1fd2")
+	)
+	(no_connect
+		(at 69.85 62.23)
+		(uuid "6a1805f4-4ce3-4e39-8e78-6ee152e2c750")
+	)
+	(no_connect
+		(at 43.18 55.88)
+		(uuid "71150c32-065b-4736-9b8a-bdcf118f3522")
+	)
+	(no_connect
+		(at 69.85 64.77)
+		(uuid "72c4e0b5-f560-4805-b433-47aa3b790dfd")
+	)
+	(no_connect
+		(at 120.65 118.11)
+		(uuid "79519954-c25f-4c13-bf94-ef7682288436")
+	)
+	(no_connect
+		(at 120.65 107.95)
+		(uuid "797aa751-b0be-438f-89c0-eb4ee302a30c")
+	)
+	(no_connect
+		(at 43.18 83.82)
+		(uuid "87e41980-4118-4130-a7e7-9739d7d2f95f")
+	)
+	(no_connect
+		(at 43.18 106.68)
+		(uuid "91da902a-b58c-434c-92ca-08a6827a169b")
+	)
+	(no_connect
+		(at 121.92 80.01)
+		(uuid "a13cad2e-676b-4972-b411-e39eb46ec18e")
+	)
+	(no_connect
+		(at 43.18 81.28)
+		(uuid "a283e5b4-fc12-43bc-a41a-2729df9098ef")
+	)
+	(no_connect
+		(at 43.18 48.26)
+		(uuid "a4c01ac6-2cf2-4859-9538-d41fe71c90ae")
+	)
+	(no_connect
+		(at 43.18 88.9)
+		(uuid "ad61cf66-b8a1-43c0-9957-1fa53861b97c")
+	)
+	(no_connect
+		(at 69.85 58.42)
+		(uuid "b316498f-a544-40b3-a5a6-b011e01de201")
+	)
+	(no_connect
+		(at 69.85 50.8)
+		(uuid "bd0693f7-c821-427b-add6-29f69a12e2fc")
+	)
+	(no_connect
+		(at 43.18 91.44)
+		(uuid "bf6b9e4b-d24f-48c9-93b7-b205e831b2bd")
+	)
+	(no_connect
+		(at 69.85 78.74)
+		(uuid "c50b65cf-9db6-47a6-8b6e-f8c6bb49630f")
+	)
+	(no_connect
+		(at 120.65 113.03)
+		(uuid "ca70ce7b-bbc9-41e8-9772-aac8a683966f")
+	)
+	(no_connect
+		(at 43.18 104.14)
+		(uuid "cf6f1765-adf7-49a0-b94a-83c3eecc04cc")
+	)
+	(no_connect
+		(at 43.18 50.8)
+		(uuid "d9e91d90-0a79-4127-8804-3c008f5cbb31")
+	)
+	(no_connect
+		(at 69.85 81.28)
+		(uuid "db3ba541-2a67-47ae-ba91-d3039448563a")
+	)
+	(no_connect
+		(at 69.85 73.66)
+		(uuid "dc275a41-b9c3-4ff4-9a3a-a683513fd0eb")
+	)
+	(no_connect
+		(at 115.57 80.01)
+		(uuid "f1f43b22-7d19-48e6-bb8b-cf03a3d8fff8")
+	)
+	(no_connect
+		(at 69.85 86.36)
+		(uuid "f412cb97-1c03-486a-b2de-91a1f39aaffe")
+	)
+	(no_connect
+		(at 69.85 55.88)
+		(uuid "fdb8a674-22ac-49cc-ab8c-632fd441c138")
+	)
+	(wire
+		(pts
+			(xy 120.65 110.49) (xy 125.73 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "03a966a8-ac47-41ff-93b5-0381cb299e0c")
+	)
+	(wire
+		(pts
+			(xy 187.96 63.5) (xy 190.5 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "07c50de3-8ee4-4ac2-9b57-84eb32fd380d")
+	)
+	(wire
+		(pts
+			(xy 39.37 53.34) (xy 43.18 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "20750537-78b6-4d7d-8c47-313d0128fdac")
+	)
+	(wire
+		(pts
+			(xy 77.47 53.34) (xy 77.47 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "268e4ee6-9e32-420a-9d41-d363349f5735")
+	)
+	(wire
+		(pts
+			(xy 137.16 44.45) (xy 137.16 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2ca6a954-30a3-4d5c-94ee-333b5f95668c")
+	)
+	(wire
+		(pts
+			(xy 247.65 78.74) (xy 250.19 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2f21b5b0-c2b9-4ac5-9d67-333e4d9d0746")
+	)
+	(wire
+		(pts
+			(xy 237.49 60.96) (xy 232.41 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "34d4d178-c501-461a-b0e2-423638e1d902")
+	)
+	(wire
+		(pts
+			(xy 130.81 64.77) (xy 137.16 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "352db229-1a2b-4818-9a3e-dc43802af55a")
+	)
+	(wire
+		(pts
+			(xy 124.46 140.97) (xy 129.54 140.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4225f492-253f-4d9a-9535-6f3b72ab5077")
+	)
+	(wire
+		(pts
+			(xy 130.81 71.12) (xy 130.81 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "43450789-d106-4ec0-9b76-2e3eaa937b66")
+	)
+	(wire
+		(pts
+			(xy 237.49 78.74) (xy 232.41 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4c7c86f6-5629-4c68-97fe-d98ff2c96ca0")
+	)
+	(wire
+		(pts
+			(xy 102.87 71.12) (xy 110.49 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4d52f91a-5863-4f2f-9487-4223a43ef1ed")
+	)
+	(wire
+		(pts
+			(xy 130.81 72.39) (xy 137.16 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5979d55b-7238-4af7-b3e6-9cfee6445b2f")
+	)
+	(wire
+		(pts
+			(xy 232.41 96.52) (xy 232.41 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5ee20d20-30de-4bf0-bdb4-41abbcfc22a9")
+	)
+	(wire
+		(pts
+			(xy 125.73 44.45) (xy 137.16 44.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5f62696a-f01a-43ef-a9a5-1e9aaef4e553")
+	)
+	(wire
+		(pts
+			(xy 130.81 67.31) (xy 130.81 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "714caef6-c48e-4bbb-b6c1-825d7474e78c")
+	)
+	(wire
+		(pts
+			(xy 77.47 43.18) (xy 77.47 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7302eb84-b347-4fed-b090-510f713e6cec")
+	)
+	(wire
+		(pts
+			(xy 120.65 102.87) (xy 125.73 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "75bdf585-41b3-4f6a-b429-c3672ec9d70b")
+	)
+	(wire
+		(pts
+			(xy 232.41 60.96) (xy 232.41 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "87c71508-17c8-4cb5-8937-b2bec652d2e6")
+	)
+	(wire
+		(pts
+			(xy 39.37 73.66) (xy 43.18 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "87cea5c6-7e1b-432f-8618-a02e9d5ea333")
+	)
+	(wire
+		(pts
+			(xy 39.37 96.52) (xy 43.18 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "88963e9d-cd53-4b71-9baa-a80c6147d0e1")
+	)
+	(wire
+		(pts
+			(xy 69.85 45.72) (xy 77.47 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8909195e-c6c4-4081-9fe5-68bf4c3d6c21")
+	)
+	(wire
+		(pts
+			(xy 102.87 67.31) (xy 107.95 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "890c7ff7-f28b-4e82-9f76-fd73d5a3958b")
+	)
+	(wire
+		(pts
+			(xy 247.65 96.52) (xy 250.19 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8c601b8f-9e4c-4e8d-92ad-b528b6d3ad92")
+	)
+	(bus
+		(pts
+			(xy 170.18 140.97) (xy 177.8 140.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "91bf6595-fbcb-4b19-bf52-f986e175b306")
+	)
+	(wire
+		(pts
+			(xy 124.46 143.51) (xy 129.54 143.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "93ac6b0b-39b3-44c5-9662-3421ee5c51c7")
+	)
+	(wire
+		(pts
+			(xy 127 67.31) (xy 130.81 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "941675f3-440c-4114-ad81-7587163fcfd6")
+	)
+	(wire
+		(pts
+			(xy 189.23 39.37) (xy 191.77 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a1d22d55-da3a-4912-a05f-5236bb21a3a0")
+	)
+	(wire
+		(pts
+			(xy 107.95 67.31) (xy 110.49 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a97df308-48b0-47ce-8a87-d4f54325fdbb")
+	)
+	(wire
+		(pts
+			(xy 120.65 115.57) (xy 128.27 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a9b6dbc5-5eae-41c1-aabc-bd1fa8ae9420")
+	)
+	(wire
+		(pts
+			(xy 120.65 97.79) (xy 125.73 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "acad03aa-22d8-4970-a3bd-ccf2c6303843")
+	)
+	(wire
+		(pts
+			(xy 247.65 60.96) (xy 250.19 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b74432a6-aeb6-4561-99aa-b8ac28f63392")
+	)
+	(wire
+		(pts
+			(xy 163.83 86.36) (xy 166.37 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b871aa49-5b7a-4d87-91c5-f058e59500ab")
+	)
+	(wire
+		(pts
+			(xy 39.37 71.12) (xy 43.18 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b967bb66-0e33-41fd-b8a5-17ddeecb284a")
+	)
+	(wire
+		(pts
+			(xy 125.73 40.64) (xy 135.89 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bf275274-a104-4e20-9c9b-14caebbda163")
+	)
+	(wire
+		(pts
+			(xy 189.23 86.36) (xy 191.77 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c2078bf8-c9b2-474a-b059-b3d1a910aa31")
+	)
+	(wire
+		(pts
+			(xy 39.37 93.98) (xy 43.18 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c97577ae-2691-41e1-9511-a62f6db3ae0f")
+	)
+	(wire
+		(pts
+			(xy 189.23 109.22) (xy 191.77 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c9fc6659-38f8-48b8-b528-7b9865a272d4")
+	)
+	(wire
+		(pts
+			(xy 102.87 40.64) (xy 106.68 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cb74c796-06bb-426b-83f3-ac870c3485fb")
+	)
+	(wire
+		(pts
+			(xy 162.56 63.5) (xy 165.1 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ce95e220-a0a4-4926-9d8d-70598a4df3a8")
+	)
+	(wire
+		(pts
+			(xy 163.83 109.22) (xy 166.37 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cfe1c05f-7f97-47f9-8bf8-3e59417a3355")
+	)
+	(wire
+		(pts
+			(xy 237.49 96.52) (xy 232.41 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d0209490-cdce-4692-916a-ee62eaa6fc5f")
+	)
+	(bus
+		(pts
+			(xy 200.66 138.43) (xy 200.66 140.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d1abb562-f2af-4680-84a8-a1a86172e32d")
+	)
+	(wire
+		(pts
+			(xy 39.37 76.2) (xy 43.18 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d9888151-d803-4cf4-b7b0-de2c94acd918")
+	)
+	(wire
+		(pts
+			(xy 77.47 53.34) (xy 69.85 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d9967c32-10a6-4bee-aabe-e5aca502c8a8")
+	)
+	(wire
+		(pts
+			(xy 39.37 68.58) (xy 43.18 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ddb9af90-2dca-43d3-93c4-bd4a5fce4f21")
+	)
+	(wire
+		(pts
+			(xy 163.83 39.37) (xy 166.37 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "de63828b-7c94-47e7-b7a5-75bef3e38f4b")
+	)
+	(wire
+		(pts
+			(xy 120.65 105.41) (xy 125.73 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e08855e4-9b59-43bd-b6b3-c71bdeab47b2")
+	)
+	(wire
+		(pts
+			(xy 107.95 66.04) (xy 107.95 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eb2d23c1-ab99-4ed6-90c8-f7ed79ea1fb0")
+	)
+	(wire
+		(pts
+			(xy 120.65 100.33) (xy 125.73 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eb5d18b5-cbb9-4c6a-9c21-1035bae92723")
+	)
+	(wire
+		(pts
+			(xy 39.37 99.06) (xy 43.18 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eb717e8a-e002-44a7-b8a1-49f00c6e9d19")
+	)
+	(wire
+		(pts
+			(xy 232.41 78.74) (xy 232.41 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f0efeb71-98f7-4d0a-90a7-bb307547575c")
+	)
+	(wire
+		(pts
+			(xy 127 71.12) (xy 130.81 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f60ab65a-b273-4f99-95c6-12b24d180854")
+	)
+	(bus
+		(pts
+			(xy 187.96 140.97) (xy 200.66 140.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f7fd42f3-07ad-4e47-8e20-7aa01c7d86c0")
+	)
+	(wire
+		(pts
+			(xy 102.87 44.45) (xy 106.68 44.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f9a71f4c-354f-4a00-8fb2-da8545c1506e")
+	)
+	(rectangle
+		(start 214.63 25.4)
+		(end 271.78 125.73)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 08747a63-3540-4df1-ae81-49c1c75f4a54)
+	)
+	(rectangle
+		(start 26.67 25.4)
+		(end 87.63 125.73)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 1d1c42f1-b8b6-42ac-8d9d-d41f6617f608)
+	)
+	(rectangle
+		(start 154.94 128.27)
+		(end 212.09 152.4)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 4f858fb8-fa40-47b0-9bee-ba302ea01fbf)
+	)
+	(rectangle
+		(start 88.9 58.42)
+		(end 153.67 82.55)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 77d5ec1a-31be-4bb8-a3bc-c5a54961d063)
+	)
+	(rectangle
+		(start 88.9 128.27)
+		(end 153.67 152.4)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 796c5d59-a057-49ce-8f1d-360fa8a6b21f)
+	)
+	(rectangle
+		(start 88.9 25.4)
+		(end 153.67 55.88)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 7b918a21-c1c0-4268-86eb-2ed2fe34a47c)
+	)
+	(rectangle
+		(start 88.9 85.09)
+		(end 153.67 125.73)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 9a406909-aaaa-4ed9-af29-47608c87a90d)
+	)
+	(rectangle
+		(start 154.9273 25.2993)
+		(end 212.0773 125.6293)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 9df81794-8b59-4016-a381-02c83fa65bbd)
+	)
+	(text "Button Debounce Circuit"
+		(exclude_from_sim no)
+		(at 156.21 27.94 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "04962209-53ef-4d6c-ba88-8aa58dca7510")
+	)
+	(text "ESP32 Development Module"
+		(exclude_from_sim no)
+		(at 27.94 27.94 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "1802a7f0-2f0b-4690-8336-962c9195b05f")
+	)
+	(text "System Buttons"
+		(exclude_from_sim no)
+		(at 214.63 27.94 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "22cbacbb-2c25-4e71-bf77-d03b744aff96")
+	)
+	(text "Boost Converter Circuit"
+		(exclude_from_sim no)
+		(at 90.17 27.94 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "4dba852b-3394-4bf1-8698-717f36cbb519")
+	)
+	(text "Power Header"
+		(exclude_from_sim no)
+		(at 156.21 130.81 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "8dc343a7-daee-400d-ab3a-fe4f43d9a180")
+	)
+	(text "Battery Charger Circuit"
+		(exclude_from_sim no)
+		(at 90.17 60.96 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "aacaca66-98f6-4834-b7dd-82e141e40d55")
+	)
+	(text "Joystick Connector"
+		(exclude_from_sim no)
+		(at 90.17 87.63 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "d824b050-1893-4b6a-b7e3-8b5e2fe18ea1")
+	)
+	(text "Power Switch Connector"
+		(exclude_from_sim no)
+		(at 90.17 130.81 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "e1d39904-419c-4341-a07c-fe56415ea4bc")
+	)
+	(global_label "DX1"
+		(shape input)
+		(at 198.12 63.5 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "03c72d46-f49f-4cf7-ac85-c55cdc448cef")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 204.14 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "J3IN"
+		(shape input)
+		(at 135.89 40.64 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "04373c03-790c-4301-9839-fdf373cff6a9")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 142.3334 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "D7"
+		(shape input)
+		(at 189.23 39.37 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "07691ab5-88ff-4ef7-9add-b8849e64afb3")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 184.4195 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "DX7"
+		(shape input)
+		(at 199.39 39.37 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "0cc85ce6-f291-4e1e-adce-f89e6cdfcb1f")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 205.41 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "D4"
+		(shape input)
+		(at 39.37 68.58 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "0e1adcf3-c31b-4e21-952e-fdab798a38ca")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 34.5595 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "J2OUT"
+		(shape input)
+		(at 129.54 140.97 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "16b69f6e-6652-4539-b9a8-8d80f4193b30")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 137.6767 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "J2OUT"
+		(shape input)
+		(at 102.87 40.64 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "1d3b8ee2-1565-4b75-a647-b3826034180c")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 94.7333 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "J2IN"
+		(shape input)
+		(at 102.87 67.31 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "237556d5-d53f-4989-b161-38851d2b6e03")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 96.4266 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "D7"
+		(shape input)
+		(at 39.37 99.06 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "263c91d5-235d-4224-89b4-47a83026ee77")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 34.5595 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "D1"
+		(shape input)
+		(at 39.37 96.52 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "295fb59f-138f-4870-b194-86ac867df6b3")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 34.5595 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "DX2"
+		(shape input)
+		(at 199.39 109.22 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "2b6b9a06-5464-4615-b8a0-9db5e30fd7ef")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 205.41 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "DX6"
+		(shape input)
+		(at 173.99 39.37 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "2bab211f-5568-4d35-a40e-2c6bd8770770")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 180.01 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "DX7"
+		(shape input)
+		(at 250.19 78.74 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "2f645e6e-8fb8-427f-9afe-63bce9665d1d")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 256.21 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "DX1"
+		(shape input)
+		(at 125.73 97.79 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "441f5edd-0a61-4824-8276-986cd000beb5")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 131.75 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "DX3"
+		(shape input)
+		(at 125.73 100.33 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "50178356-ff34-446d-899b-5870acd966f3")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 131.75 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "VIN-"
+		(shape input)
+		(at 102.87 71.12 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "518ac13b-5272-4a43-99b6-a73251bcafef")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 95.9427 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "DX5"
+		(shape input)
+		(at 125.73 110.49 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "587d924f-ca44-4039-a878-b7ab69f7d410")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 131.75 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "D3"
+		(shape input)
+		(at 189.23 86.36 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "597fb334-79df-488f-8a45-92bb9d032afd")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 184.4195 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "DX4"
+		(shape input)
+		(at 173.99 109.22 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "62c39bdb-e45a-461a-81b6-2003901cb0ae")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 180.01 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "D2"
+		(shape input)
+		(at 39.37 93.98 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "71a39807-1e76-4f02-a535-30bddeae00b4")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 34.5595 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "DX8"
+		(shape input)
+		(at 250.19 96.52 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "7343dd61-55af-405b-a550-0e9b5b464aea")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 256.21 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "D2"
+		(shape input)
+		(at 189.23 109.22 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "764db629-f2b9-4d63-b7f6-efd93aae5385")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 184.4195 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "J3IN"
+		(shape input)
+		(at 170.18 140.97 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "7b81a7b9-8b91-4360-949e-2907938cdc1d")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 163.7366 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "VIN-"
+		(shape input)
+		(at 102.87 44.45 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "81cde6e5-032a-41a1-ab95-52a59986d6f1")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 95.9427 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "D8"
+		(shape input)
+		(at 162.56 63.5 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "88ace7d9-0623-43ee-b2bb-d870f776b993")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 157.7495 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "DX2"
+		(shape input)
+		(at 125.73 105.41 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "8a823065-2bc6-44bf-b390-1c933af5987d")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 131.75 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "D1"
+		(shape input)
+		(at 187.96 63.5 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "8c1c2896-7c6b-4977-93eb-6de5fa353562")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 183.1495 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "D8"
+		(shape input)
+		(at 39.37 53.34 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "96247426-651c-4c7b-9699-ac1d624a63f8")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 34.5595 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "D6"
+		(shape input)
+		(at 163.83 39.37 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "974cab09-103b-4928-b7ac-a2212df975e2")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 159.0195 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "DX6"
+		(shape input)
+		(at 250.19 60.96 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "9cb512dd-a795-4391-834b-0d1b02d8b5f7")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 256.21 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "DX3"
+		(shape input)
+		(at 199.39 86.36 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "b0aed670-1088-41f4-ac21-f66cdd000263")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 205.41 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "D4"
+		(shape input)
+		(at 163.83 109.22 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "b682d953-f056-4860-9d09-96a49d32cfb8")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 159.0195 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "D5"
+		(shape input)
+		(at 39.37 73.66 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "bcaa0803-79b5-4667-9f1b-6784e56b695b")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 34.5595 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "DX5"
+		(shape input)
+		(at 173.99 86.36 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "c15e0030-6d14-4e1d-8372-6ec73d7b431e")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 180.01 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "D5"
+		(shape input)
+		(at 163.83 86.36 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "c25bdc4f-4029-431f-b131-cf26ecf02516")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 159.0195 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "D6"
+		(shape input)
+		(at 39.37 76.2 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "c6966ea3-5777-4e6f-bc15-28583ccf6dd1")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 34.5595 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "DX4"
+		(shape input)
+		(at 125.73 102.87 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "d58a8ba8-8177-4514-bfa2-5e603c25c514")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 131.75 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "DX8"
+		(shape input)
+		(at 172.72 63.5 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "e59d1522-3a0d-4a85-aa3f-71d1abb9cc5d")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 178.74 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "D3"
+		(shape input)
+		(at 39.37 71.12 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "eeeea3b8-352d-4e6b-af30-37184649225b")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 34.5595 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "J2IN"
+		(shape input)
+		(at 129.54 143.51 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "fe67a576-4bf3-4987-92f1-65f0c1abbc7f")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 135.9834 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(netclass_flag ""
+		(length 2.54)
+		(shape round)
+		(at 107.95 73.66 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "0c2b808e-6452-4584-8219-962d0e90941b")
+		(property "Netclass" "Power"
+			(at 105.41 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+			)
+		)
+	)
+	(netclass_flag ""
+		(length 2.54)
+		(shape round)
+		(at 132.376 72.39 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "0eaaee4a-d3c6-4744-b257-e3d4941bf728")
+		(property "Netclass" "Power"
+			(at 132.9856 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+			)
+		)
+	)
+	(netclass_flag ""
+		(length 2.54)
+		(shape round)
+		(at 105.41 40.64 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "0f552120-7477-4716-994d-2d52a62a0020")
+		(property "Netclass" "Power"
+			(at 106.0196 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+			)
+		)
+	)
+	(netclass_flag ""
+		(length 2.54)
+		(shape round)
+		(at 72.39 45.72 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "15c572c4-e3ab-4fda-9a5e-6d6e725ea59b")
+		(property "Netclass" "Power"
+			(at 72.9996 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+			)
+		)
+	)
+	(netclass_flag ""
+		(length 2.54)
+		(shape round)
+		(at 232.41 60.96 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "23463f99-17bf-45d6-ac7e-dc25b596dca4")
+		(property "Netclass" "Default"
+			(at 233.0196 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+			)
+		)
+	)
+	(netclass_flag ""
+		(length 2.54)
+		(shape round)
+		(at 123.0455 115.57 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "267b73c0-c7e1-4b87-a4c5-423666758292")
+		(property "Netclass" "Power"
+			(at 123.6551 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+			)
+		)
+	)
+	(netclass_flag ""
+		(length 2.54)
+		(shape round)
+		(at 72.39 53.34 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "41087964-9230-4469-b909-52f16465fc1a")
+		(property "Netclass" "Power"
+			(at 72.9996 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+			)
+		)
+	)
+	(netclass_flag ""
+		(length 2.54)
+		(shape round)
+		(at 232.41 78.74 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "429f044b-d6ed-4c74-8da5-0b066ce84cbb")
+		(property "Netclass" "Default"
+			(at 233.0196 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+			)
+		)
+	)
+	(netclass_flag ""
+		(length 2.54)
+		(shape round)
+		(at 128.27 40.64 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "50170085-d1ca-4b45-a691-3e9cfcbf6e64")
+		(property "Netclass" "Power"
+			(at 129.54 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+			)
+		)
+	)
+	(netclass_flag ""
+		(length 2.54)
+		(shape round)
+		(at 107.95 67.31 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "50198041-2a79-451d-96e1-5465f9eb2fde")
+		(property "Netclass" "Power"
+			(at 100.33 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+			)
+		)
+	)
+	(netclass_flag ""
+		(length 2.54)
+		(shape round)
+		(at 128.2618 44.45 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "630cc97e-c0e5-4acc-8457-b69f9e71d57e")
+		(property "Netclass" "Power"
+			(at 128.9113 46.2204 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+			)
+		)
+	)
+	(netclass_flag ""
+		(length 2.54)
+		(shape round)
+		(at 105.4571 44.45 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "8d7a91f7-aeff-4a73-bd64-1f8c034b396d")
+		(property "Netclass" "Power"
+			(at 106.0939 46.6363 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+			)
+		)
+	)
+	(netclass_flag ""
+		(length 2.54)
+		(shape round)
+		(at 232.41 96.52 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "c0a5c0d0-1387-4ffb-96dc-265ec7a46e1b")
+		(property "Netclass" "Default"
+			(at 233.0196 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+			)
+		)
+	)
+	(netclass_flag ""
+		(length 2.54)
+		(shape round)
+		(at 131.9581 64.77 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "cc55aca0-d512-4221-ab2c-a0fb72960dc7")
+		(property "Netclass" "Power"
+			(at 132.5677 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Atari Joystick Adapter Symbol Library:GND")
+		(at 166.37 46.99 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "00dc48eb-48fe-472a-b0bf-e6051e714e3f")
+		(property "Reference" "#PWR09"
+			(at 166.37 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 166.37 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 166.37 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 166.37 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 166.37 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e00fde03-00e3-41ce-83db-011019e50298")
+		)
+		(instances
+			(project "Atari Joystick Adapter"
+				(path "/e9724942-4b18-4de1-8b5e-28939277b4a7"
+					(reference "#PWR09")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Atari Joystick Adapter Symbol Library:R")
+		(at 195.58 109.22 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "014567b0-1006-43f8-8f06-b60fbb6cb828")
+		(property "Reference" "R8"
+			(at 195.58 102.87 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100"
+			(at 195.58 105.41 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+			(at 195.58 110.998 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 195.58 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 195.58 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0115788f-96c5-496a-88cf-f11317baa553")
+		)
+		(pin "2"
+			(uuid "07744ea4-dd17-407b-88d1-0c5d12562598")
+		)
+		(instances
+			(project "Atari Joystick Adapter"
+				(path "/e9724942-4b18-4de1-8b5e-28939277b4a7"
+					(reference "R8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Atari Joystick Adapter Symbol Library:GND")
+		(at 137.16 48.26 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "038720fe-e145-4148-951e-6c2ce0b93920")
+		(property "Reference" "#PWR05"
+			(at 137.16 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 137.16 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 137.16 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 137.16 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 137.16 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b0782eb0-c130-445f-a44d-36de6e1c3df5")
+		)
+		(instances
+			(project "Atari Joystick Adapter"
+				(path "/e9724942-4b18-4de1-8b5e-28939277b4a7"
+					(reference "#PWR05")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Atari Joystick Adapter Symbol Library:GND")
+		(at 190.5 71.12 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0ea3dc2c-6247-4a28-a38e-8fcbd8163e0b")
+		(property "Reference" "#PWR07"
+			(at 190.5 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 190.5 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 190.5 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 190.5 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 190.5 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ef0bb8a3-1580-463f-b73d-ffbeda76465e")
+		)
+		(instances
+			(project "Atari Joystick Adapter"
+				(path "/e9724942-4b18-4de1-8b5e-28939277b4a7"
+					(reference "#PWR07")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Atari Joystick Adapter Symbol Library:R")
+		(at 170.18 109.22 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "109a8619-62fa-433f-9100-bc09550a18e4")
+		(property "Reference" "R7"
+			(at 170.18 102.87 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100"
+			(at 170.18 105.41 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+			(at 170.18 110.998 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 170.18 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 170.18 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f126687f-3018-42f3-8a3d-567011c7ce06")
+		)
+		(pin "2"
+			(uuid "f120018c-ab6f-497b-9a4a-49ff9226268c")
+		)
+		(instances
+			(project "Atari Joystick Adapter"
+				(path "/e9724942-4b18-4de1-8b5e-28939277b4a7"
+					(reference "R7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Atari Joystick Adapter Symbol Library:C")
+		(at 191.77 113.03 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "14498189-d156-4fd7-9885-94383f512f71")
+		(property "Reference" "C8"
+			(at 195.58 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1uF"
+			(at 195.58 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm"
+			(at 192.7352 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 191.77 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 191.77 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "dc567014-20b8-43e7-9b04-3829ca1f06a4")
+		)
+		(pin "1"
+			(uuid "db7f8635-a17d-460a-b6d0-3367059d3085")
+		)
+		(instances
+			(project "Atari Joystick Adapter"
+				(path "/e9724942-4b18-4de1-8b5e-28939277b4a7"
+					(reference "C8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Atari Joystick Adapter Symbol Library:GND")
+		(at 77.47 58.42 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1e5ebae0-0c24-466b-a1b3-65f7ebfcf8eb")
+		(property "Reference" "#PWR02"
+			(at 77.47 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 77.47 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 77.47 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 77.47 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 77.47 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "36bb8753-b6f1-4dc0-8184-d73536b97862")
+		)
+		(instances
+			(project "Atari Joystick Adapter"
+				(path "/e9724942-4b18-4de1-8b5e-28939277b4a7"
+					(reference "#PWR02")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Atari Joystick Adapter Symbol Library:C")
+		(at 166.37 43.18 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2735548d-80ba-4362-ab05-b60d77dcc2bb")
+		(property "Reference" "C1"
+			(at 170.18 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1uF"
+			(at 170.18 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm"
+			(at 167.3352 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 166.37 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 166.37 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "ea0f3bb2-1098-4c8a-92c2-3b6a505caf83")
+		)
+		(pin "1"
+			(uuid "55d9cce0-49bb-420c-8452-cc6d31ca24a2")
+		)
+		(instances
+			(project "Atari Joystick Adapter"
+				(path "/e9724942-4b18-4de1-8b5e-28939277b4a7"
+					(reference "C1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Atari Joystick Adapter Symbol Library:Conn_01x02_Pin")
+		(at 119.38 143.51 0)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "27d9cb6d-ce91-4a67-9274-7a6198e34b52")
+		(property "Reference" "J2"
+			(at 118.11 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Power Switch"
+			(at 118.11 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Connector_JST:JST_EH_B2B-EH-A_1x02_P2.50mm_Vertical"
+			(at 119.38 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 119.38 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 119.38 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e82ff06d-83a0-45a2-8023-bb7f93d87ecf")
+		)
+		(pin "2"
+			(uuid "f8e25cc6-44b8-4bcb-a62e-0c7b6bd02dcf")
+		)
+		(instances
+			(project "Atari Joystick Adapter"
+				(path "/e9724942-4b18-4de1-8b5e-28939277b4a7"
+					(reference "J2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Atari Joystick Adapter Symbol Library:R")
+		(at 170.18 39.37 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "31087b59-3442-480a-b125-0a837d4716ce")
+		(property "Reference" "R1"
+			(at 170.18 33.02 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100"
+			(at 170.18 35.56 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+			(at 170.18 41.148 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 170.18 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 170.18 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "af7b118f-77d0-4897-bf2b-4d3e6cdc55d8")
+		)
+		(pin "2"
+			(uuid "c97a77f7-c816-4c23-82b9-0340369c5a13")
+		)
+		(instances
+			(project "Atari Joystick Adapter"
+				(path "/e9724942-4b18-4de1-8b5e-28939277b4a7"
+					(reference "R1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Atari Joystick Adapter Symbol Library:C")
+		(at 190.5 67.31 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3a1a5cdf-84b7-4b1f-9125-9221d6b86a6d")
+		(property "Reference" "C4"
+			(at 194.31 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1uF"
+			(at 194.31 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm"
+			(at 191.4652 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 190.5 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 190.5 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "d9501166-8830-4f08-9f1b-3243eda214a3")
+		)
+		(pin "1"
+			(uuid "4a806125-8a50-4727-ba44-7d5ddfd98ede")
+		)
+		(instances
+			(project "Atari Joystick Adapter"
+				(path "/e9724942-4b18-4de1-8b5e-28939277b4a7"
+					(reference "C4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Atari Joystick Adapter Symbol Library:R")
+		(at 195.58 39.37 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3b23bf3c-a707-4288-8251-1eb38fe6e8e3")
+		(property "Reference" "R2"
+			(at 195.58 33.02 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100"
+			(at 195.58 35.56 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+			(at 195.58 41.148 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 195.58 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 195.58 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e8ec7101-1bfe-40a7-9860-a40cefb1a156")
+		)
+		(pin "2"
+			(uuid "cab6c95c-f57a-49ea-b8b7-afbb99f995dd")
+		)
+		(instances
+			(project "Atari Joystick Adapter"
+				(path "/e9724942-4b18-4de1-8b5e-28939277b4a7"
+					(reference "R2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Atari Joystick Adapter Symbol Library:SW_Push")
+		(at 242.57 96.52 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3e06bcb2-5519-42db-87d9-d092705965eb")
+		(property "Reference" "SW3"
+			(at 242.57 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Start"
+			(at 242.57 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Button_Switch_THT:SW_PUSH-12mm"
+			(at 242.57 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 242.57 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 242.57 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c87c97d0-f402-4534-b54a-2f3df8081f66")
+		)
+		(pin "2"
+			(uuid "d054018f-f513-4bcd-b8cd-c38d6db8db53")
+		)
+		(instances
+			(project "Atari Joystick Adapter"
+				(path "/e9724942-4b18-4de1-8b5e-28939277b4a7"
+					(reference "SW3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Atari Joystick Adapter Symbol Library:GND")
+		(at 232.41 81.28 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "43cc611b-fad9-48c3-8043-aa6f96a80736")
+		(property "Reference" "#PWR015"
+			(at 232.41 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 232.41 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 232.41 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 232.41 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 232.41 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "19aa64db-1db5-495b-a681-b304c9248390")
+		)
+		(instances
+			(project "Atari Joystick Adapter"
+				(path "/e9724942-4b18-4de1-8b5e-28939277b4a7"
+					(reference "#PWR015")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Atari Joystick Adapter Symbol Library:GND")
+		(at 191.77 46.99 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "48eea585-186d-4b9b-a6c9-b2e2269aa581")
+		(property "Reference" "#PWR08"
+			(at 191.77 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 191.77 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 191.77 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 191.77 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 191.77 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2d9502db-a06e-4756-b3fc-fb1b1cfacc7a")
+		)
+		(instances
+			(project "Atari Joystick Adapter"
+				(path "/e9724942-4b18-4de1-8b5e-28939277b4a7"
+					(reference "#PWR08")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Atari Joystick Adapter Symbol Library:GND")
+		(at 166.37 93.98 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4b7a2e77-59c7-45ac-82b5-a586c49ec15b")
+		(property "Reference" "#PWR06"
+			(at 166.37 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 166.37 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 166.37 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 166.37 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 166.37 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "95341508-074e-48a3-857d-34eae8e44a47")
+		)
+		(instances
+			(project "Atari Joystick Adapter"
+				(path "/e9724942-4b18-4de1-8b5e-28939277b4a7"
+					(reference "#PWR06")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Atari Joystick Adapter Symbol Library:TP4056_TC4056_Lithium_Battery_Charger_Module_Board")
+		(at 118.11 67.31 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "4f3025cd-c651-4a7a-9d9f-66053d461531")
+		(property "Reference" "U3"
+			(at 118.11 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "~"
+			(at 119.38 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Library:LiPo Battery Charger Circuit"
+			(at 119.38 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 119.38 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 118.11 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "557fa372-2835-46a8-bde5-49e5ef581703")
+		)
+		(pin "1"
+			(uuid "5b44e438-c165-4a0b-9687-e6031808bc9d")
+		)
+		(pin "3"
+			(uuid "5ddcc6e8-61c8-436b-9454-ba4212775c7c")
+		)
+		(pin "4"
+			(uuid "cc57d98c-5048-439f-8c4f-d2858555859b")
+		)
+		(pin "5"
+			(uuid "fcfe4bf6-4645-47b1-ab41-63b3b4eab83f")
+		)
+		(pin "6"
+			(uuid "41867a6c-3388-4812-b6a2-59e45864d0aa")
+		)
+		(instances
+			(project "Atari Joystick Adapter"
+				(path "/e9724942-4b18-4de1-8b5e-28939277b4a7"
+					(reference "U3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Atari Joystick Adapter Symbol Library:VCC")
+		(at 200.66 138.43 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "4f81782a-e85e-4704-95c2-94872740278c")
+		(property "Reference" "#PWR03"
+			(at 200.66 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VCC"
+			(at 200.66 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 200.66 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 200.66 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 200.66 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6ccc2681-dfdb-41ca-b52c-b0347cbc1140")
+		)
+		(instances
+			(project "Atari Joystick Adapter"
+				(path "/e9724942-4b18-4de1-8b5e-28939277b4a7"
+					(reference "#PWR03")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Atari Joystick Adapter Symbol Library:6W_Mini_Boost_Converter")
+		(at 115.57 41.91 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5dbe7ad7-7836-4d29-b20a-662c5771a548")
+		(property "Reference" "U2"
+			(at 116.205 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "~"
+			(at 115.57 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Library:6W DC-DC Boost Converter"
+			(at 115.57 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 115.57 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 115.57 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "4"
+			(uuid "5908ba09-93ba-47b4-b14f-23564e57f921")
+		)
+		(pin "3"
+			(uuid "0aa851b6-188f-4365-8179-7fe9ce70f5c7")
+		)
+		(pin "2"
+			(uuid "451e231e-5c01-4f62-9a86-b55c466e1bce")
+		)
+		(pin "1"
+			(uuid "ddd51fca-d170-4372-ad06-9ab0e3fad53d")
+		)
+		(instances
+			(project "Atari Joystick Adapter"
+				(path "/e9724942-4b18-4de1-8b5e-28939277b4a7"
+					(reference "U2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Atari Joystick Adapter Symbol Library:mini_esp32")
+		(at 55.88 43.18 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5fb924b2-13ab-48dd-9c55-f657cdb9f7b4")
+		(property "Reference" "U1"
+			(at 56.515 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "mini_esp32"
+			(at 56.515 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "ESP32_mini_KiCad_Library-master:ESP32_mini"
+			(at 59.69 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 59.69 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 55.88 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "17"
+			(uuid "0c425d74-7c3a-45d7-b266-669dadd1848f")
+		)
+		(pin "18"
+			(uuid "b55a9541-7232-43f9-aacf-e4a0514519c2")
+		)
+		(pin "6"
+			(uuid "363693bd-7eee-4773-9aab-2464bc51da64")
+		)
+		(pin "10"
+			(uuid "a7eab0a8-534d-45fe-b5db-f7d93038963d")
+		)
+		(pin "4"
+			(uuid "915b10e8-afce-4708-9244-7f064fd6186a")
+		)
+		(pin "5"
+			(uuid "960f4ba0-d50d-4c0e-974c-8f1d09948633")
+		)
+		(pin "7"
+			(uuid "142ba66d-9dc9-4668-a573-76e6d73cd02d")
+		)
+		(pin "27"
+			(uuid "0431137a-e664-4a8a-b9e2-4aefcbc25ae4")
+		)
+		(pin "22"
+			(uuid "dd5020c2-0a01-4e79-8857-c9704ed47112")
+		)
+		(pin "23"
+			(uuid "1e4b6d46-cf52-4bb8-9869-e4f88c1c2edc")
+		)
+		(pin "28"
+			(uuid "d19d37c4-d6e7-4e9a-8940-f6bb501205c9")
+		)
+		(pin "31"
+			(uuid "dd614f41-d095-44a6-8a43-9683e5492dd1")
+		)
+		(pin "29"
+			(uuid "06970e5e-af7f-41e5-b106-cc80e362f80e")
+		)
+		(pin "24"
+			(uuid "652ac022-8e12-40d3-92f0-eb5bebac8b4b")
+		)
+		(pin "26"
+			(uuid "98705d82-ab16-4d8b-9239-c43c49f1ccfb")
+		)
+		(pin "32"
+			(uuid "36ef73c2-0b75-4137-982e-2acc98dc68eb")
+		)
+		(pin "30"
+			(uuid "c8c81e64-786a-4bcd-beb0-c17feef43827")
+		)
+		(pin "36"
+			(uuid "0fd15c4c-a4f1-4e49-9a76-d6dc759b94c8")
+		)
+		(pin "3"
+			(uuid "7f500087-3c11-457b-bb88-ee3aaab8c0c1")
+		)
+		(pin "33"
+			(uuid "3e21533f-0f97-4272-bceb-fcdc4fac9805")
+		)
+		(pin "37"
+			(uuid "7eb798db-c0bf-4599-9d25-6ec8e4e41de0")
+		)
+		(pin "34"
+			(uuid "2959c338-a3c5-4cbd-8fc4-69959e74aa7f")
+		)
+		(pin "35"
+			(uuid "2728de50-ef54-4afd-b34a-ded96129c84b")
+		)
+		(pin "21"
+			(uuid "c9564e25-beaf-46f8-aff7-07cc1160339c")
+		)
+		(pin "25"
+			(uuid "6f2a5917-8dd1-49c9-a194-6e3ebbde2e96")
+		)
+		(pin "39"
+			(uuid "c403655d-fc03-4dc3-89dd-6dc349b471d8")
+		)
+		(pin "13"
+			(uuid "7eb74698-3ce7-4f76-b66b-7d0e8ee3bdb3")
+		)
+		(pin "14"
+			(uuid "8c78f005-0c0e-4e87-9ea4-a093221e32ff")
+		)
+		(pin "1"
+			(uuid "c39b78f8-e542-4fae-9b83-4ee420e1c656")
+		)
+		(pin "12"
+			(uuid "b928fed2-e508-4050-945a-c11237df6069")
+		)
+		(pin "11"
+			(uuid "638fa761-9d1f-44a8-8efd-09486b966473")
+		)
+		(pin "8"
+			(uuid "b98969aa-4e9f-4291-b83a-2d03ed73a68f")
+		)
+		(pin "16"
+			(uuid "05c01f2a-e2c4-4809-b997-149c5eeea254")
+		)
+		(pin "15"
+			(uuid "91d872dd-cd8a-42b8-a1c7-dfa03052a254")
+		)
+		(pin "9"
+			(uuid "7532fc7f-ba55-446c-8071-1f3c1fc9ae57")
+		)
+		(pin "38"
+			(uuid "4b29b44e-36dd-4723-a36f-8b80e7895930")
+		)
+		(pin "40"
+			(uuid "7bd5805d-b09c-4339-9778-723e520b2121")
+		)
+		(pin "2"
+			(uuid "b9824286-0954-4805-9bda-6f30a2741f83")
+		)
+		(pin "19"
+			(uuid "8e310a46-408c-49f6-bcc1-a6e83626c583")
+		)
+		(pin "20"
+			(uuid "ac7fcadb-0beb-4d53-83f3-a6aa6a30ca01")
+		)
+		(instances
+			(project "Atari Joystick Adapter"
+				(path "/e9724942-4b18-4de1-8b5e-28939277b4a7"
+					(reference "U1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Atari Joystick Adapter Symbol Library:R")
+		(at 195.58 86.36 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "63e380f7-6899-4cb8-bd55-e8b8f68b4f84")
+		(property "Reference" "R6"
+			(at 195.58 80.01 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100"
+			(at 195.58 82.55 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+			(at 195.58 88.138 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 195.58 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 195.58 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ba8e534c-75f3-44a1-9f0c-e3013bd5677a")
+		)
+		(pin "2"
+			(uuid "74624478-8845-4fea-8805-aa34400840ce")
+		)
+		(instances
+			(project "Atari Joystick Adapter"
+				(path "/e9724942-4b18-4de1-8b5e-28939277b4a7"
+					(reference "R6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Atari Joystick Adapter Symbol Library:VCC")
+		(at 77.47 43.18 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6601ef30-8ddb-4a36-9673-b109cbffafcf")
+		(property "Reference" "#PWR01"
+			(at 77.47 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VCC"
+			(at 77.47 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 77.47 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 77.47 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 77.47 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5fea13d4-d2cd-4c36-a672-4ffd95c67991")
+		)
+		(instances
+			(project "Atari Joystick Adapter"
+				(path "/e9724942-4b18-4de1-8b5e-28939277b4a7"
+					(reference "#PWR01")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Atari Joystick Adapter Symbol Library:Battery_Cell")
+		(at 137.16 69.85 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "67c5f200-370b-4875-8bde-6295e5fa81bf")
+		(property "Reference" "BT1"
+			(at 140.97 66.7385 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Battery_Cell"
+			(at 140.97 69.2785 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Battery:BatteryHolder_BH-18650"
+			(at 137.16 68.326 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 137.16 68.326 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 137.16 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "345d182e-c59a-4042-9a13-565db2d016df")
+		)
+		(pin "1"
+			(uuid "a26f66fb-fde4-49e6-8b87-c88e285ba7b7")
+		)
+		(instances
+			(project "Atari Joystick Adapter"
+				(path "/e9724942-4b18-4de1-8b5e-28939277b4a7"
+					(reference "BT1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Atari Joystick Adapter Symbol Library:GND")
+		(at 128.27 115.57 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6aea4200-ae51-45da-8900-081de3dc85eb")
+		(property "Reference" "#PWR04"
+			(at 128.27 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 128.27 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 128.27 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 128.27 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 128.27 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1162a4ab-5f0a-4697-bbe3-9ff2c7ff2113")
+		)
+		(instances
+			(project "Atari Joystick Adapter"
+				(path "/e9724942-4b18-4de1-8b5e-28939277b4a7"
+					(reference "#PWR04")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Atari Joystick Adapter Symbol Library:R")
+		(at 194.31 63.5 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6f28b014-6041-4e37-bf3d-911a5f473104")
+		(property "Reference" "R4"
+			(at 194.31 57.15 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100"
+			(at 194.31 59.69 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+			(at 194.31 65.278 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 194.31 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 194.31 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "34451bdb-d669-402a-85b9-feb9c1619231")
+		)
+		(pin "2"
+			(uuid "2f5315bf-88f4-473c-a117-2dbea927fc30")
+		)
+		(instances
+			(project "Atari Joystick Adapter"
+				(path "/e9724942-4b18-4de1-8b5e-28939277b4a7"
+					(reference "R4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Atari Joystick Adapter Symbol Library:C")
+		(at 166.37 113.03 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8ada5f9d-bdbe-433b-a40d-b956606ab26b")
+		(property "Reference" "C7"
+			(at 170.18 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1uF"
+			(at 170.18 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm"
+			(at 167.3352 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 166.37 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 166.37 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "6a5a54eb-7c6f-4f2d-b887-4b3c006ef5eb")
+		)
+		(pin "1"
+			(uuid "69576cf8-6622-454c-a32a-e83618e87b29")
+		)
+		(instances
+			(project "Atari Joystick Adapter"
+				(path "/e9724942-4b18-4de1-8b5e-28939277b4a7"
+					(reference "C7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Atari Joystick Adapter Symbol Library:R")
+		(at 168.91 63.5 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9843accf-9bc2-4441-8b43-8f5e3d1417f0")
+		(property "Reference" "R3"
+			(at 168.91 57.15 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100"
+			(at 168.91 59.69 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+			(at 168.91 65.278 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 168.91 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 168.91 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b8b0775b-9ab3-4516-942d-f01ade8d683c")
+		)
+		(pin "2"
+			(uuid "ad0bbd45-2c33-4058-a89e-eb4223d4abf0")
+		)
+		(instances
+			(project "Atari Joystick Adapter"
+				(path "/e9724942-4b18-4de1-8b5e-28939277b4a7"
+					(reference "R3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Atari Joystick Adapter Symbol Library:Jumper_2_Bridged")
+		(at 182.88 140.97 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "aea9a77a-b313-4dc5-aae3-fa3b512c5261")
+		(property "Reference" "JP1"
+			(at 182.88 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Jumper_3_Bridged"
+			(at 182.88 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical"
+			(at 182.88 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 182.88 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 182.88 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7646b865-ad80-4fca-a587-4d189a2f9581")
+		)
+		(pin "2"
+			(uuid "421b57b1-fb2c-43b0-a5e4-0abd8d375832")
+		)
+		(instances
+			(project "Atari Joystick Adapter"
+				(path "/e9724942-4b18-4de1-8b5e-28939277b4a7"
+					(reference "JP1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Atari Joystick Adapter Symbol Library:GND")
+		(at 232.41 63.5 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b1c7b6ec-75a8-4e03-8f14-4abc5b83d57d")
+		(property "Reference" "#PWR016"
+			(at 232.41 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 232.41 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 232.41 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 232.41 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 232.41 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e16804c9-e6c1-4cbd-80ac-3fb6804b5d74")
+		)
+		(instances
+			(project "Atari Joystick Adapter"
+				(path "/e9724942-4b18-4de1-8b5e-28939277b4a7"
+					(reference "#PWR016")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Atari Joystick Adapter Symbol Library:Conn_01x09_Pin")
+		(at 115.57 107.95 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b33399e7-020d-400d-bb9a-592c1c968b2b")
+		(property "Reference" "J1"
+			(at 116.205 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Atari Joystick"
+			(at 116.205 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Atari:Atari 9Pin Joystick Connector"
+			(at 115.57 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 115.57 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 115.57 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "6"
+			(uuid "3ea9ca82-eed5-4e3f-b303-8b1ae41f8d49")
+		)
+		(pin "5"
+			(uuid "471978a2-fa90-449b-98af-fba8d74d4f62")
+		)
+		(pin "8"
+			(uuid "fc35b4d3-b08d-446d-9fbc-bfe63d304a58")
+		)
+		(pin "7"
+			(uuid "8e61f702-b6f5-4203-a009-a39d52bbb72a")
+		)
+		(pin "4"
+			(uuid "39102e96-0a1c-4683-b007-50445b2f91ff")
+		)
+		(pin "1"
+			(uuid "f9192851-3e85-40e9-9deb-b05fdc2f6dd0")
+		)
+		(pin "2"
+			(uuid "b2e955be-bfe5-423c-b776-f3dc101d7f00")
+		)
+		(pin "9"
+			(uuid "fedfc89b-6deb-4dc3-b99d-b2960a05ba0d")
+		)
+		(pin "3"
+			(uuid "68d25449-253e-4f99-b6b5-8d227a4bf581")
+		)
+		(instances
+			(project "Atari Joystick Adapter"
+				(path "/e9724942-4b18-4de1-8b5e-28939277b4a7"
+					(reference "J1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Atari Joystick Adapter Symbol Library:GND")
+		(at 232.41 99.06 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b45b179d-895e-47b1-906f-11f9b240c597")
+		(property "Reference" "#PWR014"
+			(at 232.41 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 232.41 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 232.41 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 232.41 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 232.41 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5e2e49d9-6ec7-46a9-a1b7-7fba67b1ed64")
+		)
+		(instances
+			(project "Atari Joystick Adapter"
+				(path "/e9724942-4b18-4de1-8b5e-28939277b4a7"
+					(reference "#PWR014")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Atari Joystick Adapter Symbol Library:GND")
+		(at 191.77 116.84 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b4a3f1d9-bfd4-45c3-b8ce-40e38a7f291a")
+		(property "Reference" "#PWR013"
+			(at 191.77 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 191.77 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 191.77 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 191.77 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 191.77 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7000d75b-8a08-45ab-a213-b3c259e5732c")
+		)
+		(instances
+			(project "Atari Joystick Adapter"
+				(path "/e9724942-4b18-4de1-8b5e-28939277b4a7"
+					(reference "#PWR013")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Atari Joystick Adapter Symbol Library:C")
+		(at 166.37 90.17 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b9b6e601-a5c1-4ac5-9659-f6a2ec6afe3b")
+		(property "Reference" "C5"
+			(at 170.18 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1uF"
+			(at 170.18 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm"
+			(at 167.3352 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 166.37 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 166.37 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "7811bf37-9144-433f-bcef-34768dc12f4f")
+		)
+		(pin "1"
+			(uuid "b2c4a707-7ff8-485c-9320-8b6fb40c06cf")
+		)
+		(instances
+			(project "Atari Joystick Adapter"
+				(path "/e9724942-4b18-4de1-8b5e-28939277b4a7"
+					(reference "C5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Atari Joystick Adapter Symbol Library:GND")
+		(at 166.37 116.84 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c48e412b-f88a-4b6e-8eef-63f605e2f384")
+		(property "Reference" "#PWR012"
+			(at 166.37 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 166.37 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 166.37 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 166.37 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 166.37 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6a9a63da-1f5e-4e55-a65c-a766b224b543")
+		)
+		(instances
+			(project "Atari Joystick Adapter"
+				(path "/e9724942-4b18-4de1-8b5e-28939277b4a7"
+					(reference "#PWR012")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Atari Joystick Adapter Symbol Library:SW_Push")
+		(at 242.57 78.74 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c4f03cd6-a041-4512-9882-a45523ef3267")
+		(property "Reference" "SW2"
+			(at 242.57 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Select"
+			(at 242.57 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Button_Switch_THT:SW_PUSH-12mm"
+			(at 242.57 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 242.57 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 242.57 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b21794a9-7ae0-422a-9092-d3dc0aa4739b")
+		)
+		(pin "2"
+			(uuid "174829ce-9a89-45f9-bedc-a1daf96fdb7e")
+		)
+		(instances
+			(project "Atari Joystick Adapter"
+				(path "/e9724942-4b18-4de1-8b5e-28939277b4a7"
+					(reference "SW2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Atari Joystick Adapter Symbol Library:R")
+		(at 170.18 86.36 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c8627110-2234-4054-a944-2769dd56b62e")
+		(property "Reference" "R5"
+			(at 170.18 80.01 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100"
+			(at 170.18 82.55 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+			(at 170.18 88.138 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 170.18 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 170.18 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2ea0b928-cbaf-4d9a-88ab-edf99ac6d683")
+		)
+		(pin "2"
+			(uuid "87236b04-9635-4dc3-b152-c0ac43f56e91")
+		)
+		(instances
+			(project "Atari Joystick Adapter"
+				(path "/e9724942-4b18-4de1-8b5e-28939277b4a7"
+					(reference "R5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Atari Joystick Adapter Symbol Library:GND")
+		(at 165.1 71.12 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "cfcab3a1-ad6c-4561-8b9e-f822bd29b9fc")
+		(property "Reference" "#PWR010"
+			(at 165.1 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 165.1 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 165.1 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 165.1 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 165.1 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "fccfc738-8424-4159-962c-860906eb2a38")
+		)
+		(instances
+			(project "Atari Joystick Adapter"
+				(path "/e9724942-4b18-4de1-8b5e-28939277b4a7"
+					(reference "#PWR010")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Atari Joystick Adapter Symbol Library:SW_Push")
+		(at 242.57 60.96 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d296ddbc-55a0-4a02-b5e5-9ae6b62fa330")
+		(property "Reference" "SW1"
+			(at 242.57 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Menu"
+			(at 242.57 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Button_Switch_THT:SW_PUSH-12mm"
+			(at 242.57 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 242.57 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 242.57 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e527038a-6214-4ffb-856b-bcce48f95ea1")
+		)
+		(pin "2"
+			(uuid "d13aeec1-9231-4945-9aa0-f3b7363b47e1")
+		)
+		(instances
+			(project "Atari Joystick Adapter"
+				(path "/e9724942-4b18-4de1-8b5e-28939277b4a7"
+					(reference "SW1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Atari Joystick Adapter Symbol Library:GND")
+		(at 191.77 93.98 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d3324dd8-398a-4842-a262-d964d170ffb7")
+		(property "Reference" "#PWR011"
+			(at 191.77 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 191.77 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 191.77 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 191.77 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 191.77 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "88497f43-007a-4ec1-ba3e-8eac66ba2e32")
+		)
+		(instances
+			(project "Atari Joystick Adapter"
+				(path "/e9724942-4b18-4de1-8b5e-28939277b4a7"
+					(reference "#PWR011")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Atari Joystick Adapter Symbol Library:C")
+		(at 191.77 43.18 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e97aec2a-88b4-4a18-b854-4f993c91d3ea")
+		(property "Reference" "C2"
+			(at 195.58 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1uF"
+			(at 195.58 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm"
+			(at 192.7352 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 191.77 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 191.77 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "b98ed789-451c-4fa5-baae-8001b3929c9d")
+		)
+		(pin "1"
+			(uuid "ffc122a2-82e9-45d5-8181-3c548963a242")
+		)
+		(instances
+			(project "Atari Joystick Adapter"
+				(path "/e9724942-4b18-4de1-8b5e-28939277b4a7"
+					(reference "C2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Atari Joystick Adapter Symbol Library:C")
+		(at 191.77 90.17 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f24371d4-fe45-4518-8ac5-168a10131d5b")
+		(property "Reference" "C6"
+			(at 195.58 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1uF"
+			(at 195.58 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm"
+			(at 192.7352 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 191.77 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 191.77 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "dbb591e8-100f-401c-ab9f-2e4bc78ebd70")
+		)
+		(pin "1"
+			(uuid "15da0c4c-51e7-4d1a-a911-4ddf9448f589")
+		)
+		(instances
+			(project "Atari Joystick Adapter"
+				(path "/e9724942-4b18-4de1-8b5e-28939277b4a7"
+					(reference "C6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Atari Joystick Adapter Symbol Library:C")
+		(at 165.1 67.31 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f9f70870-e299-497a-a332-232c6bc2fe43")
+		(property "Reference" "C3"
+			(at 168.91 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1uF"
+			(at 168.91 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_THT:C_Disc_D4.3mm_W1.9mm_P5.00mm"
+			(at 166.0652 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 165.1 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 165.1 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "06e64faf-27d9-48ab-9186-af52b4fefa87")
+		)
+		(pin "1"
+			(uuid "93657909-e276-41c6-9bab-6b529f5eecf1")
+		)
+		(instances
+			(project "Atari Joystick Adapter"
+				(path "/e9724942-4b18-4de1-8b5e-28939277b4a7"
+					(reference "C3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+)
