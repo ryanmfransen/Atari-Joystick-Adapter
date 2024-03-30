@@ -218,7 +218,7 @@ Yes! I beleive so. Let's have a look:
 
 1. Driving Controller. I would like to support the Atari driving controller used for games like Indy 500.
 
-2. Paddle Controllers. I would also like to suppor the Atari Paddle controllers used for games like Super Breakout or Warlords.
+2. Paddle Controllers. I would also like to suppor the Atari paddle controllers used for games like Super Breakout or Warlords.
 
 3. Sega or Nintendo Controllers. Might be nice to extend this to use the controllers using shift registers or other multiplexers. Modern versions of these controllers can be purchased, so incertain about this.
 
