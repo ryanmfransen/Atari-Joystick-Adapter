@@ -133,7 +133,7 @@ void Button::init() {
   // Set the pin to input and use a pullup resistor
   pinMode(pin, INPUT_PULLUP);
 
-  // Grab the current state of the pin
+  // Set the current state of the pin
   this->state = LOW;
 
   // Let's attach the interupt handler
