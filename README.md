@@ -74,7 +74,7 @@ I recall back in the seventies and eighties we used to use standard DB9 serial c
 
 ![Atari Joystick Connector](images/atarijoystickconnector.png)
 
-I've also modelled the Atari joystick connector in CAD.  Mostly just to hel pfacilitate designing theenclosure for fitmen, however I also added it to the KiCad footprint so you could also render the 3d model of the PCB with it as well.
+I've also modelled the Atari joystick connector in CAD.  Mostly just to help facilitate designing theenclosure for fitmen, however I also added it to the KiCad footprint so you could also render the 3d model of the PCB with it as well.
 
 ![Atari Joystick Conenctor Model](images/atarijoystickconnectormodel.png)
 
