@@ -1,11 +1,11 @@
 # Atari Joystick Adapter
 A bluetooth adapter for the Atari CX-40 joysticks
 
-![Atari CX-40 Joystick](../images/ataricx40joystick.png)
+![Atari CX-40 Joystick](images/ataricx40joystick.png)
 
 ## Finished Product
 
-![Atari Joystick Adapter](../images/atarijoystickadapter.png)
+![Atari Joystick Adapter](images/atarijoystickadapter.png)
 
 ## Design Objectives
 You might ask why I would build such a project. With the proliferation of existing gamepads, retro tech, and alternatives, what is it about this that makes it unique?
@@ -46,34 +46,34 @@ Yeah yeah I know, this is a one off device but I want it to look professional, w
 
 ## The PCB
 
-I designed the circuit using KiCad. I designed most of the symbols, and footprints, sans the simple capacitor, resistor, and connectors. The schematics and the KiCad project files can be found here: [Atari Joystick Adapter KiCad Project](../kicad/)
+I designed the circuit using KiCad. I designed most of the symbols, and footprints, sans the simple capacitor, resistor, and connectors. The schematics and the KiCad project files can be found here: [Atari Joystick Adapter KiCad Project](kicad/)
 
 
 Here is a 3d Render (v1.1):
 
-![Atari Joystick Adapter 3D PCB Render](../images/atarijoystickadatper3dboardrender.png)
+![Atari Joystick Adapter 3D PCB Render](images/atarijoystickadatper3dboardrender.png)
 
 Here is a picture of the populated board (v1.0)
 
-![Atari Joystick Adapter Inside](../images/atarijoystickadapterinside.png)
+![Atari Joystick Adapter Inside](images/atarijoystickadapterinside.png)
 
 ## Interfacing the Atari Joystick
 
 Tha Atari joystick uses a simple mechanism to manage the four direction buttons and the fire button.  Each button is assigned to a pin on the connector, and when pressed brings the pin low, as is seen from the ground, or common pin on the connector, pin eight(8). This makes it quite easy to connect to the ESP32, all I needed was simple debounce circuits and can otherwise go striaght into the digital GPIO pins.
 
-![Atari Joystick Schematic](../images/atarijoystickschematic.png)
+![Atari Joystick Schematic](images/atarijoystickschematic.png)
 
 ## The Atari Connector
 
 I recall back in the seventies and eighties we used to use standard DB9 serial connectors when we were making Atari style joysticks or interfacing to them. While these don't quite fit perfectly, they do work well. For this project I wanted to finally make use of real Atari joystick connectors, so I found a source for them in San Jose, Best Electronics, and bough 20 of them.
 
-![Atari Joystick Connector](../images/atarijoystickconnector.png)
+![Atari Joystick Connector](images/atarijoystickconnector.png)
 
 I've also modelled the Atari joystick connector in CAD.  Mostly just to hel pfacilitate designing theenclosure for fitmen, however I also added it to the KiCad footprint so you could also render the 3d model of the PCB with it as well.
 
-![Atari Joystick Conenctor Model](../images/atarijoystickconnectormodel.png)
+![Atari Joystick Conenctor Model](images/atarijoystickconnectormodel.png)
 
-You can download the model here: [Atari Joystick Connector Model](../models/atarijoystickmodel.step)
+You can download the model here: [Atari Joystick Connector Model](models/atarijoystickmodel.step)
 
 ## Battery and Battery Charging
 
@@ -81,11 +81,11 @@ One of my design goals was to use a rechargebale battery and circuit.  I had a b
 
 At this point all I had to do was throw a switch into the power curcuit and that should solve my power requirements. Done.
 
-![Battery Charger](../images/batterycharger.png)
+![Battery Charger](images/batterycharger.png)
 
 I purchased this [Battery Charger](https://www.amazon.ca/gp/product/B0B48VWHTD) from Amazon
 
-![Volage Converter](../images/voltageconverter.png)
+![Volage Converter](images/voltageconverter.png)
 
 I purchased this [Boost Converter](https://www.amazon.ca/gp/product/B09TZSGHYK) from Amazon
 
@@ -93,9 +93,9 @@ I purchased this [Boost Converter](https://www.amazon.ca/gp/product/B09TZSGHYK) 
 
 I designed the enclosure in Autodesks Fusion 360. I think it worked out quite well.  The enclosure is made of the main (top?) piece, and the cover (bottom?)  I also printed thee switch extensions so you can use the three switches placed in the PCB such that they would extend the proper amount up and out of the top case.
 
-The enclosure CAD files can be found here: [Atari Joystick Adapter CAD Files](../models)
+The enclosure CAD files can be found here: [Atari Joystick Adapter CAD Files](models)
 
-The Bambu Studio .3mf file for the enclosure can be found here: [Atari Joystick Adapter Bambu Studio 3mf Porject File](../bambustudio/Atari%20Joystick%20Adapter%20Case.3mf)
+The Bambu Studio .3mf file for the enclosure can be found here: [Atari Joystick Adapter Bambu Studio 3mf Porject File](bambustudio/Atari%20Joystick%20Adapter%20Case.3mf)
 
 ## The Code
 
