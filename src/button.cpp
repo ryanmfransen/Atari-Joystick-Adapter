@@ -20,7 +20,7 @@ void Button::init() {
   // Set the current state of the pin
   this->state = LOW;
 
-  // Let's attach the interupt handler
+  // Let's attach the interrupt handler
   std::function<void(void)> stdFunct {std::bind(&Button::instanceIsr, this)};
   attachInterrupt(digitalPinToInterrupt(this->pin), stdFunct, CHANGE);
 }
