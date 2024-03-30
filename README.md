@@ -50,7 +50,7 @@ I designed the circuit using KiCad. I designed most of the symbols, and footprin
 
 Schematic:
 
-![Atari Joystick Adapter Schematic](images/atarijoystickadapterschematic.png =100x600)
+![Atari Joystick Adapter Schematic](images/atarijoystickadapterschematic.png)
 
 Here is a 3d Render (v1.1):
 
