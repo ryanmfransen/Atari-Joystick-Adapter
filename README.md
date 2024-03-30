@@ -48,7 +48,6 @@ Yeah yeah I know, this is a one off device but I want it to look professional, w
 
 I designed the circuit using KiCad. I designed most of the symbols, and footprints, sans the simple capacitor, resistor, and connectors. The schematics and the KiCad project files can be found here: [Atari Joystick Adapter KiCad Project](kicad/)
 
-
 Here is a 3d Render (v1.1):
 
 ![Atari Joystick Adapter 3D PCB Render](images/atarijoystickadatper3dboardrender.png)
@@ -56,6 +55,8 @@ Here is a 3d Render (v1.1):
 Here is a picture of the populated board (v1.0)
 
 ![Atari Joystick Adapter Inside](images/atarijoystickadapterinside.png)
+
+I send the gerber files to PCBWay to be built, and received 10 boards in about a week.
 
 ## Interfacing the Atari Joystick
 
@@ -74,6 +75,17 @@ I've also modelled the Atari joystick connector in CAD.  Mostly just to hel pfac
 ![Atari Joystick Conenctor Model](images/atarijoystickconnectormodel.png)
 
 You can download the model here: [Atari Joystick Connector Model](models/atarijoystickmodel.step)
+
+## ESP32
+
+I ended up using the ESP32 Mini WROOM-32 by KeeYees.  I really like the mini board configuration, as I have used several of the similar D1Minis ESP8266's in the past.
+
+The ESP32 dev board was the obvious choise for this project as it has the bluetooth connectivity I need and sufficient GPIO pins.
+
+![ESP32 Mini](images/esp32wroom32mini.png)
+
+I used this ESP32 from Amazon: [ESP32 Mini Wroom-32](https://www.amazon.ca/gp/product/B08TBQRMY4)
+
 
 ## Battery and Battery Charging
 
