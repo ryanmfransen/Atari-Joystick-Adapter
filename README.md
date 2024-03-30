@@ -50,7 +50,7 @@ I designed the circuit using KiCad. I designed most of the symbols, and footprin
 
 Schematic:
 
-![Atari Joystick Adapter Schematic](images/atarijoystickadapterschematic.png)
+![Atari Joystick Adapter Schematic](images/atarijoystickadapterschematic.png =100x600)
 
 Here is a 3d Render (v1.1):
 
@@ -66,7 +66,7 @@ I send the gerber files to PCBWay to be built, and received 10 boards in about a
 
 Tha Atari joystick uses a simple mechanism to manage the four direction buttons and the fire button.  Each button is assigned to a pin on the connector, and when pressed brings the pin low, as is seen from the ground, or common pin on the connector, pin eight(8). This makes it quite easy to connect to the ESP32, all I needed was simple debounce circuits and can otherwise go striaght into the digital GPIO pins.
 
-<img src="images/atarijoystickschematic.png" alt="Atari Joystick Schematic" style="width:600" />
+![Atari Joystick Schematic](images/atarijoystickschematic.png)
 
 ## The Atari Connector
 
@@ -124,6 +124,23 @@ I use a number of classes to manage the program.  The main class is the Button c
 The second Class is the FireButton class, extending the Button class.  This adds in the addition of a button identifier, used for gamepad buttons, such as the fire button.
 
 The interupt service routines, in the button objects simply set the updated state, and flag the button as having changed state.
+
+Managing the interupt handler in each object is a handy way to control state. Most solutions I have seen out on Youtube have some sort of global variables storing the state for all the buttons.  I like the ability to do this atomically, it keeps things clean.
+
+Here is the Button class iniatializer funtion, setting the ISR for the class instance.
+```
+void Button::init() {
+  // Set the pin to input and use a pullup resistor
+  pinMode(pin, INPUT_PULLUP);
+
+  // Grab the current state of the pin
+  this->state = LOW;
+
+  // Let's attach the interupt handler
+  std::function<void(void)> stdFunct {std::bind(&Button::instanceIsr, this)};
+  attachInterrupt(digitalPinToInterrupt(this->pin), stdFunct, CHANGE);
+}
+```
 
 The main loop of the application simply iterates over the button instances, checking if they have changed state.  If they have, then the new state is sent via the bluetooth gamepad.
 
