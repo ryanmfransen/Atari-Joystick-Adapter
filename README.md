@@ -48,6 +48,10 @@ Yeah yeah I know, this is a one off device but I want it to look professional, w
 
 I designed the circuit using KiCad. I designed most of the symbols, and footprints, sans the simple capacitor, resistor, and connectors. The schematics and the KiCad project files can be found here: [Atari Joystick Adapter KiCad Project](kicad/)
 
+Schematic:
+
+![Atari Joystick Adapter Schematic](images/atarijoystickadapterschematic.png)
+
 Here is a 3d Render (v1.1):
 
 ![Atari Joystick Adapter 3D PCB Render](images/atarijoystickadatper3dboardrender.png)
@@ -62,7 +66,7 @@ I send the gerber files to PCBWay to be built, and received 10 boards in about a
 
 Tha Atari joystick uses a simple mechanism to manage the four direction buttons and the fire button.  Each button is assigned to a pin on the connector, and when pressed brings the pin low, as is seen from the ground, or common pin on the connector, pin eight(8). This makes it quite easy to connect to the ESP32, all I needed was simple debounce circuits and can otherwise go striaght into the digital GPIO pins.
 
-![Atari Joystick Schematic](images/atarijoystickschematic.png)
+<img src="images/atarijoystickschematic.png" alt="Atari Joystick Schematic" style="width:600" />
 
 ## The Atari Connector
 
