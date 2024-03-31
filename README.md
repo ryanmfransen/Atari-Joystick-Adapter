@@ -109,7 +109,7 @@ I purchased this [Boost Converter](https://www.amazon.ca/gp/product/B09TZSGHYK) 
 
 I designed the enclosure in Autodesk's Fusion 360. I think it worked out quite well.  The enclosure consists of the main(top) piece, and the cover (bottom) as well as three switch extensions so you can use the three switches placed in the PCB such that they would extend the proper amount up and out of the top case.
 
-![Atari Joystick Adapter Enclosure Rendering](images/atarijoystickadaptercaserender.png)
+![Atari Joystick Adapter Enclosure Rendering](images/atarijoystickadapterenclosure.png)
 
 The enclosure CAD files can be found here: [Atari Joystick Adapter CAD Files](models)
 
